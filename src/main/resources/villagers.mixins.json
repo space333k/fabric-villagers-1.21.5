@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.space333.villagers.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TradeOffersMixin",
+    "VillagerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
