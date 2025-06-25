@@ -52,7 +52,9 @@ public class FletcherTrade {
             };
         }
         return new TradeOffers.Factory[]{
-                new TradeOffers.SellPotionHoldingItemFactory(Items.ARROW, 5, Items.TIPPED_ARROW, 5, 2, 12, 20)
+                new TradeOffers.SellPotionHoldingItemFactory(Items.ARROW, 5, Items.TIPPED_ARROW, 5, 2, 12, 20),
+                new TradeOffers.SellEnchantedToolFactory(Items.CROSSBOW, 4, 3, 20),
+                new TradeOffers.SellEnchantedToolFactory(Items.BOW, 6, 3, 20)
         };
     }
 

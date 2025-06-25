@@ -2,7 +2,6 @@ package com.space333.villagers.trades;
 
 import com.space333.villagers.util.ModTags;
 import net.minecraft.item.Items;
-import net.minecraft.registry.tag.EnchantmentTags;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerType;
 

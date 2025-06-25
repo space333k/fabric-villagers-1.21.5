@@ -19,12 +19,12 @@ public class ModEnchantmentTagProvider extends FabricTagProvider.EnchantmentTagP
         getOrCreateTagBuilder(ModTags.Enchantments.PLAINS_TRADES)
                 .add(Enchantments.PROJECTILE_PROTECTION)
                 .add(Enchantments.BANE_OF_ARTHROPODS)
-                .addOptional(Enchantments.IMPALING)
-                .addOptional(Enchantments.POWER);
+                .add(Enchantments.IMPALING)
+                .addOptional(Enchantments.FLAME);
 
         getOrCreateTagBuilder(ModTags.Enchantments.DESERT_TRADES)
                 .add(Enchantments.FIRE_PROTECTION)
-                .add(Enchantments.BANE_OF_ARTHROPODS)
+                .add(Enchantments.FIRE_ASPECT)
                 .add(Enchantments.DENSITY)
                 .addOptional(Enchantments.QUICK_CHARGE);
 
@@ -33,8 +33,7 @@ public class ModEnchantmentTagProvider extends FabricTagProvider.EnchantmentTagP
                 .add(Enchantments.SMITE)
                 .add(Enchantments.SWEEPING_EDGE)
                 .addOptional(ModEnchantments.REACH)
-                .addOptional(Enchantments.EFFICIENCY)
-                .addOptional(Enchantments.FLAME);
+                .addOptional(Enchantments.EFFICIENCY);
 
         getOrCreateTagBuilder(ModTags.Enchantments.JUNGLE_TRADES)
                 .add(Enchantments.FORTUNE)
