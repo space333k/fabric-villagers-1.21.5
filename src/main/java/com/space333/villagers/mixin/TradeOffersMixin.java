@@ -1,9 +1,6 @@
 package com.space333.villagers.mixin;
 
-import com.space333.villagers.trades.ButcherTrade;
-import com.space333.villagers.trades.FletcherTrade;
-import com.space333.villagers.trades.LeatherworkerTrade;
-import com.space333.villagers.trades.LibrarianTrade;
+import com.space333.villagers.trades.*;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 import org.spongepowered.asm.mixin.Mixin;
@@ -26,12 +23,17 @@ public class TradeOffersMixin {
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FLETCHER).replace(1, FletcherTrade.trades1());
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FLETCHER).replace(2, FletcherTrade.trades2());
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FLETCHER).replace(3, FletcherTrade.trades3());
+        PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FLETCHER).replace(4, FletcherTrade.trades4());
+        PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FLETCHER).replace(5, FletcherTrade.trades5());
 
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.LEATHERWORKER).replace(3, LeatherworkerTrade.trades3());
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.LEATHERWORKER).replace(5, LeatherworkerTrade.trades5());
 
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.BUTCHER).replace(4, ButcherTrade.trades4());
         PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.BUTCHER).replace(5, ButcherTrade.trades5());
+
+        PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FISHERMAN).replace(4, FishermanTrade.trades4());
+        PROFESSION_TO_LEVELED_TRADE.get(VillagerProfession.FISHERMAN).replace(5, FishermanTrade.trades5());
 
     }
 
